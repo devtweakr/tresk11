@@ -1,8 +1,3 @@
-
-
-
-
-
 body{
   width: 100%;
   height: 100vh;
@@ -15,22 +10,43 @@ body{
 
 }
 
-
 .content{
   height: 100vh;
 }
 .content-page{
   min-height: 100vh;
-
   background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 60%);
 }
-
 
 .tabla{
   height: 100vh;
 }
 
+/* counter */
+
+.counter {
+  color: #333;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  right: 10px;
+}
+
+.counter li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.counter li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+/* home */
 .natecaji-img{
 height: 130vh;
 width: 100%;
