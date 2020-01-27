@@ -1,0 +1,93 @@
+
+
+
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(86,181,133);
+  background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
+  background-image: url(/img/back.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.content{
+  height: 100vh;
+}
+.content-page{
+  min-height: 100vh;
+
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 50%);
+}
+
+
+.tabla{
+  height: 100vh;
+}
+
+.natecaji-img{
+height: 130vh;
+width: 100%;
+}
+.btn-back a{
+  color: white !important;
+}
+
+.btn-natecaji{
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0,0,0,0.5);
+  top:500px;
+  left: 100px;
+  position: relative;
+}
+
+/* @media screens */
+
+@media (max-height: 480px) {
+  .btn-natecaji{
+    top:45ex;
+    left: 10ex;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-natecaji{
+    top:40ch;
+    left: 7vch;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-natecaji{
+    top:53vmax;
+    left: 10vmax;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-natecaji{
+    top: 470px;
+    left: 95px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-natecaji{
+    top: 490px;
+    left: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-natecaji{
+    top: 500px;
+    left: 100px;
+  }
+}
