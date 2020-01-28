@@ -20,6 +20,13 @@ body:before {
   background: url(/img/grain.png);
 }
 
+.rs-link {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+
 .content{
   height: 100vh;
 }
@@ -33,9 +40,29 @@ body:before {
   height: 100vh;
 }
 
-.tabla img{
+.img-tabla{
+  top: 0;
+  left: 0;
+  position: absolute;
   height: 120vh;
 }
+
+
+
+.link-natecaji {
+  position: absolute;
+  top: 46vmin;
+  left:17%;
+  color: #00000000;
+  background-color: rgba(255,255,255,0.2);
+  width: 7.5rem;
+  height: 7.55rem;
+}
+
+.link-natecaji:hover {
+  color: #00000000;
+}
+
 
 /* counter */
 
@@ -61,82 +88,39 @@ body:before {
 }
 
 /* home */
+
 .natecaji-img{
 height: 130vh;
 width: 100%;
 }
+
 .btn-back a{
   color: white !important;
-}
-
-.btn-natecaji{
-  width: 120px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.6);
-  top:600px;
-  left: 100px;
-  position: relative;
 }
 
 /* @media screens */
 
 @media (max-height: 480px) {
-  .btn-natecaji{
-    top:45ex;
-    left: 10ex;
-  }
+
 }
 
 @media (max-width: 576px) {
-  .btn-natecaji{
-    top:40ch;
-    left: 7vch;
-  }
+
 }
 
 @media (min-width: 576px) {
-  .btn-natecaji{
-    top:53vmax;
-    left: 10vmax;
-  }
+
 }
 
 @media (min-width: 768px) {
-  .btn-natecaji{
-    top: 470px;
-    left: 95px;
-  }
+
 }
 
 @media (min-width: 992px) {
-  .btn-natecaji{
-    top: 490px;
-    left: 100px;
-  }
+
 }
 
 @media (min-width: 1200px) {
-  .btn-natecaji{
-    top: 500px;
-    left: 100px;
-  }
+
 }
 
-.link-natecaji {
-  position: absolute;
-  top: 28rem;
-  left: 7.5rem;
-  color: #00000000;
-  width: 7.5rem;
-  height: 7.55rem;
-}
-
-.link-natecaji:hover {
-  color: #00000000;
-}
-
-.rs-link {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
