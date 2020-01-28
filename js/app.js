@@ -15,12 +15,12 @@ const NajboljsaFotografija = {
   template: '#najboljsa-fotografija'
 }
 
-const NajboljsaPodoba = {
-  template: '#najboljsa-podoba'
-}
-
 const NajboljsiPlakat = {
   template: '#najboljsi-plakat'
+}
+
+const NajboljsaPodoba = {
+  template: '#najboljsa-podoba'
 }
 
 const NajboljInovativen = {
@@ -33,8 +33,8 @@ const routes = [
   { path: '/natecaji', component: Natecaji },
   { path: '/najboljsi-videospot', component: NajboljsiVideospot },
   { path: '/najboljsa-fotografija', component: NajboljsaFotografija },
-  { path: '/najboljsa-podoba', component: NajboljsaPodoba },
   { path: '/najboljsi-plakat', component: NajboljsiPlakat },
+  { path: '/najboljsa-podoba', component: NajboljsaPodoba },
   { path: '/najbolj-inovativen', component: NajboljInovativen }
 ]
 
