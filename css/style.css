@@ -25,6 +25,11 @@ body:before {
   right: 2rem;
 }
 
+.rs-link img {
+  width: 70px;
+  height: 70px;
+}
+
 
 .content{
   height: 100vh;
