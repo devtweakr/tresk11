@@ -129,3 +129,9 @@ width: 100%;
 .link-natecaji:hover {
   color: #00000000;
 }
+
+.rs-link {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
