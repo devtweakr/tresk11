@@ -1,13 +1,23 @@
-body{
+body {
   width: 100%;
   height: 100vh;
   background: rgb(86,181,133);
   background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
-  background-image: url(../img/back.png);
+  background-image: url(/img/ozadje_11.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+
+body:before {
+ content: ' ';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background: url(/img/grain.png);
 }
 
 .content{
