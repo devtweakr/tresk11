@@ -24,5 +24,9 @@
 }
 
 ul {
-  padding-left: 35px;
+  padding-left: 28px;
+}
+
+li {
+  margin-bottom: 5px;
 }
