@@ -117,3 +117,15 @@ width: 100%;
     left: 100px;
   }
 }
+
+.link-natecaji {
+  position: absolute;
+  top: 17.4rem;
+  left: 4rem;
+  color: #00000000;
+  width: 7.5rem;
+  height: 7.55rem;
+}
+.link-natecaji:hover {
+  color: #00000000;
+}
