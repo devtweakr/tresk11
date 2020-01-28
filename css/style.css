@@ -33,6 +33,10 @@ body:before {
   height: 100vh;
 }
 
+.tabla img{
+  height: 120vh;
+}
+
 /* counter */
 
 .counter {
@@ -68,8 +72,8 @@ width: 100%;
 .btn-natecaji{
   width: 120px;
   height: 120px;
-  background-color: rgba(0,0,0,0.5);
-  top:500px;
+  background-color: rgba(0, 0, 0, 0.6);
+  top:600px;
   left: 100px;
   position: relative;
 }
@@ -120,12 +124,13 @@ width: 100%;
 
 .link-natecaji {
   position: absolute;
-  top: 17.4rem;
-  left: 4rem;
+  top: 28rem;
+  left: 7.5rem;
   color: #00000000;
   width: 7.5rem;
   height: 7.55rem;
 }
+
 .link-natecaji:hover {
   color: #00000000;
 }
