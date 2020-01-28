@@ -1,224 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="mobile.css"> -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="mobile.css"> -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
-  <title>Tresk 11</title>
-</head>
-<body>
-
-
-  <div id="app">
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <router-link class="navbar-brand" :to="{ path: '/' }">Welcome</router-link>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link class="nav-link" :to="{ path: '/hello' }">Hello</a>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :to="{ path: '/hello-again' }">Hello Again</a>
-          </li>
-        </ul>
-    </nav> -->
-
-        <router-view keep-alive></router-view>
-
-</div>
-
-<template id="tresk-home">
-  <transition name="component-fade" appear>
-    <div class="container">
-
-      <a href="https://radiostudent.si" target="_blank" class="rs-link">
-        <img src="img/rs_crn.svg">
-      </a>
-
-      <div class="content row">
-        <div class="tabla overflow-hidden col-12 col-sm-12 col-md-9 col-lg-7 col-xl-6">
-          <img  class="img-tabla" src="img/signs.svg">
-          <svg class="img-tabla" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" version="1.1" id="svg211">
-            <style id="style2">
-            </style>
-            <a xlink:href="#/natecaji">
-            <ellipse id="natecaji-svg-link" cx="245.6" cy="747.9" rx="121.9" ry="123" opacity=".1" vector-effect="none" fill="gray" fill-opacity="1" stroke="none" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/></a>
-          </svg>
-          <!-- <a href="#/natecaji" alt="Vizualni natečaji" class="link-natecaji">Vizualni natečaji</a> -->
-        </div>
-      </div>
+    <title>Tresk 11</title>
+  </head>
+  <body>
+    <div id="app">
+      <router-view keep-alive></router-view>
     </div>
-  </transition>
-</template>
-
-<template id="natecaji">
-  <transition name="component-fade" mode="out-in" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-
-        <a href="https://radiostudent.si" target="_blank" class="rs-link">
-          <img src="img/rs_crn.svg">
-        </a>
-
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">Natečaji</h1>
-          <div class="counter">
-            <ul class="p-0">
-              <li><span id="days"></span>DNI</li>
-              <li><span id="hours"></span>Ur</li>
-              <li><span id="minutes"></span>Minut</li>
-              <li><span id="seconds"></span>Sekund</li>
-            </ul>
+    <template id="tresk-home">
+      <transition name="component-fade" appear>
+        <div class="container">
+          <div class="content row">
+            <div class="tabla overflow-hidden col-12">
+              <a href="https://radiostudent.si" target="_blank" class="rs-link">
+                <img src="img/rs_crn.svg">
+              </a><img  class="img-tabla" src="img/signs.svg">
+              <svg class="img-tabla" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" version="1.1" id="svg211">
+                <style id="style2">
+                </style>
+                <a xlink:href="#/natecaji">
+                <ellipse id="natecaji-svg-link" cx="245.6" cy="747.9" rx="121.9" ry="123" opacity=".1" vector-effect="none" fill="gray" fill-opacity="1" stroke="none" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-dasharray="none" stroke-dashoffset="0" stroke-opacity="1"/></a>
+              </svg>
+            </div>
           </div>
-            <p>Poleg glasbenega sejmišča festival Tresk vsako leto razpiše vizualni natečaj, ki se je ob jubilejni izvedbi leta 2019 razširil v pet kategorij, ki so tako ali drugače povezanih z glasbenih založništvom. Nagrade v sodelovanju z zainteresiranimi podporniki se podeljuje za</p>
-
-            <ul class="m-3">
-              <li><router-link class="" :to="{ path: '/najboljsi-videospot' }">najboljši videospot <i class="fa fa-external-link-square"></i></a></li>
-              <li><router-link class="" :to="{ path: '/najboljsa-fotografija' }">najboljšo fotografijo glasbenega dogodka <i class="fa fa-external-link-square"></i></a></li>
-              <li><router-link class="" :to="{ path: '/najboljsi-plakat' }">najboljši plakat glasbenega dogodka <i class="fa fa-external-link-square"></i></a></li>          <li><router-link class="" :to="{ path: '/najboljsa-podoba' }">najboljšo podobo albuma <i class="fa fa-external-link-square"></i></a></li>
-              <li><router-link class="" :to="{ path: '/najbolj-inovativen' }">najbolj inovativen pristop k oglaševanju in oblikovanju dogodka <i class="fa fa-external-link-square"></i></a></li>
-            </ul>
-            <br>
-            <h4>POMEMBNO!</h4>
-            <p>Za vse informacije in vprašanja smo vam na voljo prek e-pošte info <afna> tresk.si ali preko <a target="_blank" href="https://www.facebook.com/festivaltresk/">Facebooka</a>.</p>
-            <p>Prijavite se tako, da izpolnite spletni obrazec za določeno kategorijo. Če so vaše datoteke prevelike, nam do njih pošljite spletno povezavo oz. nas kontaktirajte.</p>
-
-            <p><a href="doc/tresk_11_pravila_sodelovanja.pdf" target="_blank"><strong>PRAVILA SODELOVANJA </strong><i class="fa fa-external-link-square"></i></a></p>
-            <br>
-            <br>
-            <br>
-            <P>ARHIV lanskoletnih zmagovalcev</P>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
+    
+    <template id="natecaji">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">Natečaji</h1>
+              <div class="counter">
+                <ul class="p-0">
+                  <li><span id="days"></span>DNI</li>
+                  <li><span id="hours"></span>Ur</li>
+                  <li><span id="minutes"></span>Minut</li>
+                  <li><span id="seconds"></span>Sekund</li>
+                </ul>
+              </div>
+                <p>Festival Tresk vsako leto razpiše vizualni natečaj, ki se je ob jubilejni izvedbi leta 2019 razširil v pet kategorij, ki so tako ali drugače povezane z glasbenim založništvom. Nagrade v sodelovanju s podporniki se podeljuje za:</p>
+                <ul class="m-3">
+                  <li><router-link class="" :to="{ path: '/najboljsi-videospot' }">najboljši videospot <i class="fa fa-external-link-square"></i></a></li>
+                  <li><router-link class="" :to="{ path: '/najboljsa-fotografija' }">najboljšo fotografijo glasbenega dogodka <i class="fa fa-external-link-square"></i></a></li>
+                  <li><router-link class="" :to="{ path: '/najboljsi-plakat' }">najboljši plakat glasbenega dogodka <i class="fa fa-external-link-square"></i></a></li>          <li><router-link class="" :to="{ path: '/najboljsa-podoba' }">najboljšo podobo albuma <i class="fa fa-external-link-square"></i></a></li>
+                  <li><router-link class="" :to="{ path: '/najbolj-inovativen' }">najbolj inovativen pristop k oglaševanju in oblikovanju dogodka <i class="fa fa-external-link-square"></i></a></li>
+                </ul>
+                <p>Za vse informacije in vprašanja smo vam na voljo na elektronskem naslovu na elektronskem naslovu <a href="mailto:info@tresk.si">info@tresk.si</a>.</p>
+                <p>Prijavite se tako, da izpolnite spletni obrazec za določeno kategorijo. Če so vaše datoteke prevelike, nam pošljite spletno povezavo do njih oz. nas kontaktirajte.</p>
+                <p><a href="doc/tresk_11_pravila_sodelovanja.pdf" target="_blank"><strong>PRAVILA SODELOVANJA </strong><i class="fa fa-external-link-square"></i></a></p>
 
-<template id="najboljsi-videospot">
-  <transition name="component-fade" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">1. NAJBOLJŠI VIDEOSPOT</h1>
-
-            <p>Festival Tresk podeljuje edino nagrado za lokalne video ustvarjalce na glasbeni sceni, s čimer se trudimo, da bi žanr videospotov postal širše mišljen, kot tudi predvajan v mednarodnem prostoru. Tej kategoriji pritiče javna projekcija desetih izbranih finalistov na dogodku v Kinoteki, 28. Marca 2020, ki jo bo pospremila debata o stanju in možnostih lokalne video produkcije.</p>
-            <p>Pozivamo k prijavi videospotov domačih ustvarjalcev, ki so nastali oz. so bili objavljeni med 12. aprilom 2019 in 3. aprilom 2020. Posameznik oz. posameznica lahko prijavi do največ tri glasbene videje.</p>
-
-            <p><a href="https://tresk.si/d/natecaji/video" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
+    <template id="najboljsi-videospot">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">1. NAJBOLJŠI VIDEOSPOT</h1>
 
-<template id="najboljsa-fotografija">
-  <transition name="component-fade" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">2. NAJBOLJŠA FOTOGRAFIJA GLASBENEGA DOGODKA</h1>
+                <p>Festival Tresk podeljuje edino nagrado za lokalne video ustvarjalce na glasbeni sceni, s čimer se trudi, da bi žanr videospotov postal tako širše mišljen kot tudi predvajan v mednarodnem prostoru. Tej kategoriji pritiče javna projekcija desetih izbranih finalistov na dogodku v Slovenski kinoteki, 28. marca 2020, ki jo bo pospremila debata o stanju in možnostih lokalne video produkcije.</p>
+                <p>Pozivamo k prijavi videospotov domačih ustvarjalcev, ki so nastali oz. so bili objavljeni med 12. aprilom 2019 in 3. aprilom 2020. Posameznik oz. posameznica lahko prijavi do največ tri glasbene videe.</p>
 
-            <p>Tresk 11 išče inovativne fotografije glasbenih dogodkov, ki presegajo običajno foto-dokumentacijo. Najsi bo v okvir ujeta publika ali nastopajoči, koncert ali glasbeni festival, klubski dogodki, rejvi ali intimni nastopi. Fotografija glasbenega dogodka se namreč spreminja skupaj s fotografi_njami, ki skrivajo svoje potenciale za objektivi pametnih telefonov, na filmskih negativih ali za velikimi digitalnimi mašinami.</p>
-            <p>Posameznik oz. posameznica lahko predloži do največ tri fotografije (ki so lahko zasnovane tudi kot serija), posnete med 12. aprilom 2019 in 3. aprilom 2020. Prosimo, da ob prijavi upoštevate spodaj navedene tehnične specifikacije.</p>
-
-            <p><a href="https://tresk.si/d/natecaji/fotografija" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+                <p><a href="https://tresk.si/d/natecaji/video" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
 
-<template id="najboljsa-podoba">
-  <transition name="component-fade" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">3. NAJBOLJŠA PODOBA ALBUMA</h1>
+    <template id="najboljsa-fotografija">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">2. NAJBOLJŠA FOTOGRAFIJA GLASBENEGA DOGODKA</h1>
 
-            <p>Tresk 11 ponovno želi v vpogled dobiti izvirne, odštekane in inovativne oblikovalske rešitve za fizični nosilec glasbenega albuma. Sprejemamo vse od kaset, CD-jev, vinilk do USB ključkov in nenavadnih nosilcev kod za spletni dostop.</p>
-            <p>Posameznik oz. posameznica lahko prijavi do največ tri podobe albumov objavljenih med 12. aprilom 2019 in 3. aprilom 2020. Izvajalcev oz. izvajalk podobe je lahko tudi več. Datoteke podob albumov naj bodo izvirne velikosti, nekonvencionalne oblikovalske rešitve pa naj bodo še dodatno foto dokumentirane.</p>
+                <p>Tresk 11 išče inovativne fotografije glasbenih dogodkov, ki presegajo običajno foto dokumentacijo, najsi bo v okvir ujeta publika ali nastopajoči, koncert ali glasbeni festival, klubski dogodki, rejvi ali intimni nastopi. Fotografija glasbenega dogodka se namreč spreminja skupaj s fotografi_njami, ki skrivajo svoje potenciale za objektivi pametnih telefonov, na filmskih negativih ali za velikimi digitalnimi napravami.</p>
+                <p>Posameznik oz. posameznica lahko predloži do največ tri fotografije (ki so lahko zasnovane tudi kot serija), posnete med 12. aprilom 2019 in 3. aprilom 2020. Prosimo, da ob prijavi upoštevate spodaj navedene tehnične specifikacije.</p>
 
-            <p><a href="https://tresk.si/d/natecaji/album" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+                <p><a href="https://tresk.si/d/natecaji/fotografija" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
 
-<template id="najboljsi-plakat">
-  <transition name="component-fade" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">4. NAJBOLJŠI PLAKAT GLASBENEGA DOGODKA</h1>
+    <template id="najboljsi-plakat">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">3. NAJBOLJŠI PLAKAT GLASBENEGA DOGODKA</h1>
 
-            <p>Kategorija, ki se osredotoča na medij glasbenega plakata. Dobrodošle in zaželjene so vse njegove variacije, kot tudi prikaz njihove uporabe v praksi.</p>
-            <p>Posameznik oz. posameznica lahko prijavi največ tri plakate glasbenih dogodkov objavljenih med marcem 2019 ter aprilom 2020 (izdanih pred festivalom Tresk 11). Oblikovalcev oz. oblikovalk plakata je lahko tudi več. Datoteke plakatov naj bodo izvirne velikosti, nekonvencionalne oblikovalske rešitve pa naj bodo še dodatno foto dokumentirane.</p>
+                <p>Kategorija, ki se osredotoča na medij glasbenega plakata. Dobrodošle in zaželene so vse njegove variacije, kot tudi prikaz njihove uporabe v praksi.</p>
+                <p>Posameznik oz. posameznica lahko prijavi največ tri plakate glasbenih dogodkov, objavljene med marcem 2019 ter aprilom 2020 (torej izdane pred festivalom Tresk 11). Oblikovalcev oz. oblikovalk plakata je lahko tudi več. Datoteke plakatov naj bodo izvirne velikosti, nekonvencionalne oblikovalske rešitve pa naj bodo še dodatno fotografsko dokumentirane.</p>
 
-            <p><a href="https://tresk.si/d/natecaji/plakat" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+                <p><a href="https://tresk.si/d/natecaji/plakat" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
 
-<template id="najbolj-inovativen">
-  <transition name="component-fade" appear>
-    <div class="content-page d-flex">
-      <div class="container">
-        <nav class="navbar pl-0">
-          <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
-        </nav>
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 center">5. INOVATIVEN PRISTOP K OBLIKOVANJU IN OGLAŠEVANJU DOGODKA</h1>
+    <template id="najboljsa-podoba">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">4. NAJBOLJŠA PODOBA ALBUMA</h1>
 
-            <p>Kategorija, ki razširjeno pokriva še vse “obplakatne” segmente dogodka, npr. celostno grafično podobo glasbenega dogodka, spletno podobo, promocijo preko družabnih omrežij, letake, merchandise, vizualije, scenografijo, ipd.</p>
-            <p>Posameznik oz. posameznica lahko prijavi največ tri objave glasbenih dogodkov, ki so bili objavljeni oz. so se zgodili med med marcem 2019 ter aprilom 2020 (pred festivalom Tresk 11). Snovalcev oz. snovalk dogodka je lahko tudi več. Prijavljeno delo je lahko predstavljeno v obliki fotografij, pdf prezentacije ali videa.</p>
-            <p><strong>NE SPREGLEJTE: fizični izvodi</strong></p>
-            <p>V primeru, da vaše nekonvencionalne rešitve vsebujejo fizične objekte, ki jih je najlažje predstaviti in razumeti v živo, lahko stvari pošljete po pošti ali prinesete osebno na Radio Študent (naslov: Zavod Radio Študent (Natečaji festivala Tresk: inovativni pristop), Svetčeva 9, 1000 Ljubljana). Po zaključku festivala vam bomo fizične objekte vrnili po pošti oziroma jih boste lahko prevzeli na naslovu organizatorja.</p>
+                <p>Tresk 11 ponovno želi v vpogled dobiti izvirne, odštekane in inovativne oblikovalske rešitve za fizični nosilec glasbenega albuma. Sprejemamo vse od kaset, CD-jev in vinilk do USB ključkov in nenavadnih nosilcev kod za spletni dostop.</p>
+                <p>Posameznik oz. posameznica lahko prijavi največ tri podobe albumov, objavljenih med 12. aprilom 2019 in 3. aprilom 2020. Izvajalcev oz. izvajalk podobe je lahko tudi več. Datoteke podob albumov naj bodo izvirne velikosti, nekonvencionalne oblikovalske rešitve pa naj bodo še dodatno fotografsko dokumentirane.</p>
 
-            <p><a href="https://tresk.si/d/natecaji/inovativno" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+                <p><a href="https://tresk.si/d/natecaji/album" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </transition>
-</template>
+      </transition>
+    </template>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
-<script src="js/counter.js"></script>
-</body>
+    <template id="najbolj-inovativen">
+      <transition name="component-fade" appear>
+        <div class="content-page d-flex">
+          <div class="container">
+            <nav class="navbar pl-0">
+              <router-link class="btn btn-primary btn-back" :to="{ path: '/natecaji' }"><i class="fa fa-arrow-left"></i></a>
+            </nav>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="display-6 center">5. INOVATIVEN PRISTOP K OBLIKOVANJU IN OGLAŠEVANJU DOGODKA</h1>
+
+                <p>Kategorija, ki razširjeno vključuje še vse “obplakatne” segmente dogodka, npr. celostno grafično podobo glasbenega dogodka, spletno podobo, promocijo prek družabnih omrežij, letake, promocijsko gradivo, vizualije, scenografijo ipd.</p>
+                <p>Posameznik oz. posameznica lahko prijavi največ tri objave glasbenih dogodkov, ki so bile objavljene oz. so se zgodile med marcem 2019 ter aprilom 2020 (pred festivalom Tresk 11). Snovalcev oz. snovalk dogodka je lahko tudi več. Prijavljeno delo je lahko predstavljeno v obliki fotografij, PDF prezentacije ali videa.</p>
+
+                <!-- <p><strong>NE SPREGLEJTE: fizični izvodi</strong></p>
+                <p>V primeru, da vaše nekonvencionalne rešitve vsebujejo fizične objekte, ki jih je najlažje predstaviti in razumeti v živo, lahko stvari pošljete po pošti ali prinesete osebno na Radio Študent (naslov: Zavod Radio Študent (Natečaji festivala Tresk: inovativni pristop), Svetčeva 9, 1000 Ljubljana). Po zaključku festivala vam bomo fizične objekte vrnili po pošti oziroma jih boste lahko prevzeli na naslovu organizatorja.</p> -->
+
+                <p><a href="https://tresk.si/d/natecaji/inovativno" target="_blank"><strong>PRIJAVNI OBRAZEC </strong><i class="fa fa-external-link-square"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </template>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="js/counter.js"></script>
+  </body>
 </html>

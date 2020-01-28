@@ -1,13 +1,12 @@
 body {
   width: 100%;
+  height: 100vh;
   background: rgb(86,181,133);
   background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
   background-image: url(../img/ozadje_11.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-
 }
 
 body:before {
@@ -31,7 +30,8 @@ body:before {
   height: 100vh;
 }
 .content-page{
-  min-height: 100vh;
+  overflow:auto;
+  height: 100vh;
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 60%);
 }
@@ -41,13 +41,9 @@ body:before {
 }
 
 .img-tabla{
-  top: 0;
-  left: 0;
   position: absolute;
-  height: 120vh;
+  height: 140vh;
 }
-
-
 
 .link-natecaji {
   position: absolute;
