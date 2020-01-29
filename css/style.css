@@ -9,11 +9,6 @@ body {
   background-size: cover;
 }
 
-.eksplozija {
-  -webkit-box-shadow: -17px -13px 36px 10px rgba(0,0,0,0.84); 
-  box-shadow: -17px -13px 36px 10px rgba(0,0,0,0.84);
-}
-
 body:before {
  content: ' ';
   top: 0;
@@ -36,7 +31,6 @@ body:before {
   height: 70px;
 }
 
-
 .content{
   height: 100vh;
 }
@@ -55,21 +49,6 @@ body:before {
   position: absolute;
   height: 140vh;
 }
-
-.link-natecaji {
-  position: absolute;
-  top: 46vmin;
-  left:17%;
-  color: #00000000;
-  background-color: rgba(255,255,255,0.2);
-  width: 7.5rem;
-  height: 7.55rem;
-}
-
-.link-natecaji:hover {
-  color: #00000000;
-}
-
 
 /* counter */
 
@@ -108,7 +87,7 @@ width: 100%;
 
 /* @media screens */
 
-@media (max-height: 480px) {
+@media (max-width: 480px) {
 
 }
 
@@ -131,4 +110,3 @@ width: 100%;
 @media (min-width: 1200px) {
 
 }
-
