@@ -92,7 +92,17 @@ width: 100%;
 }
 
 @media (max-width: 576px) {
-
+  .rs-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index:1;
+  }
+  
+  .rs-link img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (min-width: 576px) {
