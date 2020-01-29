@@ -53,7 +53,7 @@ body:before {
 /* counter */
 
 .counter {
-  height: 100px;
+  min-height: 100px;
   color: #333;
   text-align: center;
   position: relative;
