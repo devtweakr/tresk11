@@ -1,6 +1,8 @@
-body {
-  width: 100%;
-  height: 100vh;
+html, body {
+  height: 100%;
+}
+
+#app {
   background: rgb(86,181,133);
   background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
   background-image: url("../img/back_tresk11.svg");
@@ -9,7 +11,7 @@ body {
   background-size: cover;
 }
 
-body:before {
+#app:before {
  content: ' ';
   top: 0;
   bottom: 0;
@@ -52,7 +54,7 @@ body:before {
 
 /* counter */
 
-.counter {  
+.counter {
   color: #333;
   text-align: center;
   position: relative;
@@ -95,7 +97,7 @@ width: 100%;
     right: 1rem;
     z-index:1;
   }
-  
+
   .rs-link img {
     width: 60px;
     height: 60px;
@@ -116,4 +118,14 @@ width: 100%;
 
 @media (min-width: 1200px) {
 
+}
+
+.sponzorji > img {
+  max-height: 2rem;
+  max-width: 5rem;
+  margin: .5rem;
+}
+
+.sponzorji {
+  margin-bottom: 3rem;
 }
