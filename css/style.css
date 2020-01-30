@@ -84,6 +84,19 @@ width: 100%;
   color: white !important;
 }
 
+/* sponzorji */
+
+.sponzorji > img {
+  max-height: 2rem;
+  max-width: 9rem;
+  margin: .5rem;
+}
+
+.sponzorji {
+  margin-bottom: 3rem;
+}
+
+
 /* @media screens */
 
 @media (max-width: 480px) {
@@ -95,7 +108,7 @@ width: 100%;
     position: absolute;
     top: 1rem;
     right: 1rem;
-    z-index:1;
+    z-index: 1;
   }
 
   .rs-link img {
@@ -118,14 +131,4 @@ width: 100%;
 
 @media (min-width: 1200px) {
 
-}
-
-.sponzorji > img {
-  max-height: 2rem;
-  max-width: 9rem;
-  margin: .5rem;
-}
-
-.sponzorji {
-  margin-bottom: 3rem;
 }
