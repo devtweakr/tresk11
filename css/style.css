@@ -2,6 +2,13 @@ html, body {
   height: 100%;
 }
 
+svg {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #app {
   background: rgb(86,181,133);
   background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
