@@ -1,0 +1,11 @@
+/* TRANSITION */
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.component-fade-enter, .component-fade-leave-to {
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=/app.ed7d1cf1.css.map */
