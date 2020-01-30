@@ -13,7 +13,7 @@ svg {
   background: rgb(86,181,133);
   background: linear-gradient(35deg, rgba(86,181,133,1) 0%, rgba(0,158,226,1) 100%);
   background-image: url("../img/back_tresk11.svg");
-  background-position: left center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
