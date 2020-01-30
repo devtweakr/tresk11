@@ -1,34 +1,34 @@
 /* COMPONENTS */
-const TreskHome = {
+var TreskHome = {
   template: '#tresk-home'
 }
 
-const Natecaji = {
+var Natecaji = {
   template: '#natecaji'
 }
 
-const NajboljsiVideospot = {
+var NajboljsiVideospot = {
   template: '#najboljsi-videospot'
 }
 
-const NajboljsaFotografija = {
+var NajboljsaFotografija = {
   template: '#najboljsa-fotografija'
 }
 
-const NajboljsiPlakat = {
+var NajboljsiPlakat = {
   template: '#najboljsi-plakat'
 }
 
-const NajboljsaPodoba = {
+var NajboljsaPodoba = {
   template: '#najboljsa-podoba'
 }
 
-const NajboljInovativen = {
+var NajboljInovativen = {
   template: '#najbolj-inovativen'
 }
 
 /* ROUTES */
-const routes = [
+var routes = [
   { path: '/', component: TreskHome },
   { path: '/natecaji', component: Natecaji },
   { path: '/najboljsi-videospot', component: NajboljsiVideospot },
@@ -38,15 +38,15 @@ const routes = [
   { path: '/najbolj-inovativen', component: NajboljInovativen }
 ]
 
-const router = new VueRouter({
+var router = new VueRouter({
   routes
 });
 
 /* MAIN */
-const app = new Vue({
+var app = new Vue({
   router,
 }).$mount('#app')
 
-function natecajiOpen() { 
-  window.location = 'index.html/natecaji' 
-} 
+function natecajiOpen() {
+  window.location = 'index.html/natecaji'
+}
