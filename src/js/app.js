@@ -46,7 +46,3 @@ var router = new VueRouter({
 var app = new Vue({
   router,
 }).$mount('#app')
-
-function natecajiOpen() {
-  window.location = 'index.html/natecaji'
-}
