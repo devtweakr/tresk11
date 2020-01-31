@@ -40,6 +40,17 @@ svg {
   height: 70px;
 }
 
+.datum {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.datum img {
+  /* width: 70px;
+  height: 70px; */
+}
+
 .content{
   height: 100vh;
 }
@@ -115,12 +126,22 @@ width: 100%;
     position: absolute;
     top: 1rem;
     right: 1rem;
-    z-index: 1;
   }
 
   .rs-link img {
     width: 60px;
     height: 60px;
+  }
+  
+  .datum {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .datum img {
+    width: 100px;
+    height: 100px;
   }
 }
 
